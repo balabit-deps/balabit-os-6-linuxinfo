@@ -1,0 +1,14 @@
+Source: linuxinfo
+Section: utils
+Priority: optional
+Maintainer: Helge Kreutzmann <debian@helgefjell.de> 
+Build-Depends: debhelper (>= 9), autotools-dev
+Standards-Version: 3.9.6
+XS-Testsuite: autopkgtest
+
+Package: linuxinfo
+Architecture: linux-any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Displays extended system information
+ Displays system info, such as kernel revision, glibc version,
+ processor type and memory size, in general by parsing /proc/cpuinfo.
